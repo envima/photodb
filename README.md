@@ -3,6 +3,6 @@ PhotoDB documentation
 
 ---
 
-# Dokumentation: [>>>**table of contents**<<<](docs/index.md)
+# Documentation: [>>>**table of contents**<<<](docs/index.md)
 
 ---
