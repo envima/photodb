@@ -43,10 +43,13 @@ Traverse `root_data_path` and, for all jpg files without YAML file in root_path,
 
 **photo_insert_megadetector_detections**
 
-Insert MegaDetector detections.
+Insert **MegaDetector** detections.
 
 MegaDetector retuns a JSON result files. Detections content of that file can be inserted in PhotDB meta data YAML files by this task.  
-*See [image metadata property detections](image_metadata.md)*.
+*See for inserted MegaDetector detections [image metadata property detections](image_metadata.md)*.
+
+MegaDetector is an extenal application to create detections of **animal**, **person** and **vehicle** as JSON file that can be inserted into PhotoDB.  
+For how to install and run MegaDetector, see [MegaDetector repository on GitHub](https://github.com/microsoft/CameraTraps/blob/main/megadetector.md).
 
 ---
 
