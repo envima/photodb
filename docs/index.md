@@ -5,8 +5,7 @@
   * [On **Windows**](deployment_on_windows.md)
 * **Configuration**
   * [Application **server**](config.md)  
-  * [HTTPS **certificates**](https_certificates.md) 
-  * [**AudioDB**](config_audiodb.md)  
+  * [HTTPS **certificates**](https_certificates.md)
   * [**PhotoDB**](config_photodb.md)    
 * **Operating**
   * [On **Ubuntu**](operating_on_ubuntu.md)

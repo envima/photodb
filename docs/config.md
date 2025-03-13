@@ -1,8 +1,15 @@
 # Configuration
 
-Application settings are in YAML file `config.yaml`
+All application settings are in the YAML file `config.yaml`.
+
+Here, you configure your own PhotoDB instance. To configure your server settings refer to the following.
+
+If you want to set up only a local PhotoDB instance you may skip directly to [PhotoDB cofiguration](config_photoDB.md).
+
 
 # Application configuration
+
+In the `config.yaml` you can specify *login*, *http_port*, *https_port*, *keystore_path*, and *keystore_password*. Your `config.yaml`may look like this:
 
 `config.yaml` example:
 ```yaml
@@ -17,6 +24,8 @@ keystore_password: 'myPassword'
 
 **login**
 
+Specifies if users need to login with indivdual credentials to get access to the PhotoDB instance.
+
 No login needed, no access restrictions:
 ```yaml
 login: false
@@ -30,7 +39,7 @@ login: true
 
 **http_port**
 
-Application server listening on plain HTTP port.
+Specifies the application server listening on plain HTTP port.
 
 Default port 8080:
 ```yaml
@@ -62,7 +71,7 @@ https_port: 0
 
 *Needed for HTTPS connections only. Not needed for HTTP connections, so no keystore file. In the distribution package, no keystore file is included.*
 
-Valid certificate for HTTPS encryption. Needs correct password at `keystore_password`.
+Specifies filepath (relative to application root folder) to valid certificate for HTTPS encryption. Needs correct password at `keystore_password`.
 
 Default `keystore.jks` filename at application root folder:
 ```yaml
@@ -73,7 +82,7 @@ Keystore should be in standardized [**PKCS #12**](https://en.wikipedia.org/wiki/
 ```yaml
 keystore_path: 'certificate_with_certificate_chain.p12'
 ```
-*See [HTTPS certificates](https_certificates.md)*.
+*For more information see [HTTPS certificates](https_certificates.md)*.
 
 ---
 

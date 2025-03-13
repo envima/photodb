@@ -2,7 +2,7 @@
 
 Possibly long running actions within PhotoDB server are called tasks.
 
-Currently tasks can be executed in the audio web-interface. Even for PhotoDB only tasks, you need to open the audio web-interface to manage tasks.
+Currently tasks are executed in the audio web-interface. Even for PhotoDB only tasks, you need to open the audio web-interface to manage tasks.
 
 ---
 
@@ -30,7 +30,7 @@ There, click on the top left button to open the left navigation side panel and s
 **photo_create_file_hashs**
 
 For all photo files create checksums, skip files with already created checksums.  
-*See [image metadata property XXH64](image_metadata.md)*. 
+*See [image metadata property XXH64](image_metadata.md)*.
 
 ---
 
@@ -38,6 +38,8 @@ For all photo files create checksums, skip files with already created checksums.
 
 Traverse `root_data_path` and, for all jpg files without YAML file in root_path, create a new YAML file.  
 *See [image metadata](image_metadata.md)*.
+
+This task must be executed when new images are added to PhotoDB!
 
 ---
 
