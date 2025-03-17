@@ -4,4 +4,4 @@ PhotoDB is an open-source software for image data management, preprocessing, and
 
 ## Get started
 
-To get started with PhotoDB, please go to  the documentation's [>>>**table of contents**<<<](index.md)!
+To get started with PhotoDB, please go to  the documentation's [>>>**table of contents**<<<](docs/index.md)!
