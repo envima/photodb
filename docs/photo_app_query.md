@@ -8,6 +8,13 @@ The image sequence can be a query or a review list, which is switched with the q
 
 *A custom image sequence is specified.*
 
+Keys supplied in [`config.yaml`](config_photodb.md) as **original_path_keys** may be used to filter images, creating customized image subsets.
+
+Additionally, images may be filtered by **date**. One day in time is selected. Days that contain images at the specified location are marked with black text, days that contain images at some locations, but not at the currently selected location are marked with grey text.
+
+
+deprecated:
+
 By **location**-control one location is selected.
 
 By **date**-control one day in time is selected. Days that contain images at the specified location are marked with **black text**, days that contain images at some locations, but not at the currently selected location are marked with **grey text**.
