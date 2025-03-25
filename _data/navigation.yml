@@ -1,0 +1,76 @@
+main:
+  - title: "GitHub"
+    url: https://github.com/Nature40/audiodb
+
+deployment:
+  - title: "Deployment"
+    url: ../_pages/deployment.md
+    children:
+    - title: "Ubuntu"
+      url: ../collections/_deployment/deployment_ubuntu.md
+    - title: "Windows"
+      url: ../collections/_deployment/deployment_windows.md
+  - title: "Configuration >>>"
+    url: ../_pages/configuration.md
+
+configuration:
+  - title: "<<< Deployment"
+    url: ../_pages/deployment.md
+  - title: "Configuration"
+    url: ../_pages/configuration.md
+    children:
+    - title: "Project Configuration"
+      url: ../collections/_configuration/PhotoDB.md
+    - title: "Server"
+      url: ../collections/_configuration/server.md
+    - title: "HTTPS certificate"
+      url: ../collections/_configuration/https.md
+  - title: "Operation >>>"
+    url: ../_pages/operating.md
+
+operating:
+  - title: "<<< Configuration"
+    url: ../_pages/configuration.md
+  - title: "Operating"
+    url: ../_pages/operation.md
+    children:
+    - title: "Ubuntu"
+      url: ../collections/operation/operating_ubuntu.md
+    - title: "Windows"
+      url: ../collections/operation/operating_windows.md
+  - title: "Usage >>>"
+    url: ../_pages/usage.md
+
+usage:
+  - title: "<<< Operating"
+    url: ../_pages/operation.md
+  - title: "PhotoDB & PhotoAPP Usage"
+    url: ../_pages/usage.md
+    children:
+    - title: "Image Metadata"
+      url: "../collections/usage/metadata.md"
+    - title: "Classification Definition"
+      url: "../collections/usage/classification_definition.md"
+    - title: "Review Lists"
+      url: "../collections/usage/review_lists.md"
+    - title: "Tasks"
+      url: "../collections/usage/tasks.md"
+    - title: "PhotoApp Query"
+      url: "../collections/usage/photoapp_query.md"
+    - title: "PhotoApp Browser"
+      url: "../collections/usage/photoapp_browser.md"
+    - title: "PhotoApp Viewer"
+      url: "../collections/usage/photoapp_viewer.md"
+  - title: "Maintenance >>>"
+
+maintenance:
+  - title: "<<< PhotoDB & PhotoApp Usage"
+    url: ../pages/usage.md
+  - title: "Maintenance"
+    url: ../_pages/maintenance.md
+    children:
+    - title: "User Accounts"
+      url: ../collections/maintenance/user_accounts.md
+    - title: "Updating Application"
+      url: ../collections/maintenance/updating_application.md
+  - title: "Development >>>"
