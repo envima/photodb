@@ -1,4 +1,8 @@
-# Development of server backend
+---
+title: Development of server backend
+sidebar:
+  nav: development
+---
 
 *For normal application usage, development is not needed.*
 

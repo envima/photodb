@@ -1,8 +1,16 @@
 ---
-layout: home
+layout: splash
+title: "PhotoDB"
+excerpt: "open-source software for image data management, preprocessing, and annotation"
+date: 2025-03-25
+permalink: /
+header:
+  overlay_image: /assets/banner.png
+  overlay_filter: 0.5 # Adjust transparency (0 = no filter, 1 = black)
+  actions:
+    - label: "Get Started"
+      url: "_pages/instructions_introduction.html"
 ---
-
-PhotoDB is an open-source software for image data management, preprocessing, and annotation.
 
 ## Highlights 
 
@@ -13,7 +21,3 @@ PhotoDB is an open-source software for image data management, preprocessing, and
 * integration of MegaDetector or any custom classification or detection results using any arbitrary programming language with YAML capabilities 
 
 * possibility to develop complex and completely automated workflows covering the whole data life cycle from collection to analysis 
-
-## Get started
-
-Go to the step by step [instructions](_pages/instructions_introduction.md) to lear how to set up your own PhotoDB!

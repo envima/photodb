@@ -18,11 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: PhotoDB
+title: Home
 email: noah.just@geo.uni-marburg.de
 description: >- # this means to ignore newlines until "baseurl:"
   PhotoDB is a flexible image data management and annotation tool, that utilizes a machine- and human-readable metadata sidecar YAML file approach. PhotoDB is meant to be used as the backbone of your personal image processing workflow. Interaction with image metadata is possible at any point during a worklfow using any aribtrary programming language with YAML capabilities, allowig, e.g., for the integration of cusomized AI models.
-baseurl: "/photodb_doumentation" # the subpath of your site, e.g. /blog
+baseurl: "/photodb_documentation" # the subpath of your site, e.g. /blog
 url: "https://envima.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #- twitter_username: jekyllrb
 github_username:  justNoah1699
@@ -54,7 +54,7 @@ collections:
   configuration:
     output: true
     permalink: /:collection/:title.html
-  operation:
+  operating:
     output: true
     permalink: /:collection/:title.html
   usage:
@@ -69,7 +69,7 @@ defaults:
   # _pages
   - scope:
       path: ""
-      type: pages
+      type: page
     values:
       layout: single
   # deployment

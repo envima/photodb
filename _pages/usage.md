@@ -1,4 +1,8 @@
-# PhotoDB & PhotoApp Usage
+---
+title: PhotoDB & PhotoApp Usage
+sidebar:
+  nav: usage
+---
 
 Users can interact with PhotoDB over the web interface, PhotoApp. Here, images may be visually inspected, preprocessed, and annotated.
 

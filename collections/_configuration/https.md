@@ -6,7 +6,7 @@ title: HTTPS certificates
 
 For encrypted and certified **HTTPS** connections a valid certificate has to be provided in the [**PKCS #12**](https://en.wikipedia.org/wiki/PKCS_12) format.
 
-*See [config](config.md)*.
+*See [config](PhotoDB.html)*.
 
 ***
 

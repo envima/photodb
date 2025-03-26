@@ -4,7 +4,7 @@ title: Review lists
 
 Apart from directly traversing the project photo archive according to folder structure, **review lists** allow to traverse a subset of images in sequential order. One review list contains a list of photo entries to traverse.
 
-This can for example be used to supply a set of images intended to be used as model training data, i.e. images that have to be manually annotated. Similarly, one might want to browse through images containing a certain object; By extracting detection info from the metadata one could construct a list of all the images containig this object. Supplying this list as review list then allows the user to easily visually inspect the given images.
+This can for example be used to supply a set of images intended to be used as model training data, i.e. images that have to be manually annotated. Similarly, one might want to browse through images containing a certain object; By extracting detection info from the metadata using a programming language with YAML capabilities one could construct a list of all the images containig this object. Supplying this list as review list then allows the user to easily visually inspect the given images.
 
 Review lists should all be saved into a single directory. This directory is given as `review_list_path` in the project configuration file `config.yaml`, e.g.:
 

@@ -5,9 +5,9 @@ title: Image metadata
 Metadata of images are stored as sidecar files in YAML format.
 
 E.g., the metadata to an image file `image01.jpg` is stored in the YAML-file `image01.jpg.yaml` located in the same folder or in a separate metadata folder structure of prallell structure as the image folders.  
-*See [PhotoDB configuration properties root_path and root_data_path](../_configuration/PhotoDB.md)*.
+*See [PhotoDB configuration properties root_path and root_data_path](/photodb_documentation/configuration/PhotoDB.html)*.
 
-See [tasks](../_usage/tasks.md) to learn about initial YAML file generation with `photo_create_yaml` task.
+See [tasks](/photodb_documentation/usage/tasks.html) to learn about initial YAML file generation with `photo_create_yaml` task.
 
 #### Example of `image01.jpg.yaml` file content:
 
@@ -52,7 +52,7 @@ Size of the image file in bytes.
 ### XXH64
 
 A file hash of the image file content.  
-*See [task photo_create_file_hashs](photodb_tasks.md)*.
+*See [task photo_create_file_hashs](/photodb_documentation/usage/tasks.html)*.
 
 ### width
 

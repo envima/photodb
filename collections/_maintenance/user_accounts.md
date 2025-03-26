@@ -4,11 +4,11 @@ title: User accounts
 
 When setting up a PhotoDB instance you may create individual, role-based user accounts for your collaborators. Users of the application are identified by account names.
 
-User accounts are optional; The application can be run either with **login disabled** or **login enabled**. This is configured in the `config.yaml` file.
+User accounts are optional; The application can be run either with **login disabled** or **login enabled**. This is configured in the [`config.yaml`](/photodb_documentation/_configuration/PhotoDB.html) file.
 
 ## Login disabled
 
-With [`config.yaml`](../_configuration/PhotoDB.md) entry
+With [`config.yaml`](/photodb_documentation/configuration/PhotoDB.html) entry
 ```yaml
 login: false
 ```
@@ -18,7 +18,7 @@ There are no access restrictions, so `anonymous` has admin rights.
 
 ## Login enabled
 
-With [`config.yaml`](../_configuration/PhotoDB.md) entry
+With [`config.yaml`](/photodb_documentation/_configuration/PhotoDB.html) entry
 ```yaml
 login: true
 ```
@@ -52,7 +52,7 @@ At AudioApp, click on the top left button to open the left navigation side panel
 
 By **create new account**-button, new user accounts can be created. Normal users of AudioDB or PhotoDB do not need roles. So the roles selection box can be left empty. A user account privileged to manage user accounts needs the role `admin` or some other more specific role.
 
-<img src="../../_assets/PhotoApp_UserManagement.png" alt="PhotoApp Account Management" width="auto" height="300" align="center">
+<img src="/photodb_documentation/assets/PhotoApp_UserManagement.png" alt="PhotoApp Account Management" width="auto" height="300" align="center">
 
 ## Roles
 

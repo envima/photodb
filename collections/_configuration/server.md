@@ -75,7 +75,7 @@ Keystore should be in standardized [**PKCS #12**](https://en.wikipedia.org/wiki/
 ```yaml
 keystore_path: 'certificate_with_certificate_chain.p12'
 ```
-*For more information see [HTTPS certificates](https_certificates.md)*.
+*For more information see [HTTPS certificates](https.html)*.
 
 ---
 
