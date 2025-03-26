@@ -29,8 +29,7 @@ github_username:  justNoah1699
 repository: envima/photodb_documentation
 
 # Build settings
-# theme: minima
-remote_theme: "mmistakes/minimal-mistakes-jekyll@v4.24.0"
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin: "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 plugins:
   - jekyll-feed
@@ -69,7 +68,7 @@ defaults:
   # _pages
   - scope:
       path: ""
-      type: page
+      type: pages
     values:
       layout: single
   # deployment
@@ -127,14 +126,8 @@ defaults:
 # their entries' file path in the `include:` list.
 #
 # exclude:
-  - _posts
-  - /docs  # ignore Minimal Mistakes /docs
-  - /test  # ignore Minimal Mistakes /test
 #   - .sass-cache/
 #   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
