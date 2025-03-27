@@ -1,5 +1,5 @@
 ---
-title: PhotoDB tasks
+title: PhotoDB Tasks
 ---
 
 Tasks are possibly long running actions within the PhotoDB application. For example, you may generate YAML metadata files by running the `photo_create_yaml` task or refresh the web interface using the `photo_refresh` task.

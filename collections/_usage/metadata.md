@@ -1,13 +1,13 @@
 ---
-title: Image metadata
+title: Image Metadata
 ---
 
 Metadata of images are stored as sidecar files in YAML format.
 
-E.g., the metadata to an image file `image01.jpg` is stored in the YAML-file `image01.jpg.yaml` located in the same folder or in a separate metadata folder structure of prallell structure as the image folders.  
+E.g., the metadata to an image file `image01.jpg` is stored in the YAML-file `image01.jpg.yaml` located in the same folder or in a separate metadata directory of prallell structure as the image folders.  
 *See [PhotoDB configuration properties root_path and root_data_path](/photodb_documentation/configuration/PhotoDB.html)*.
 
-See [tasks](/photodb_documentation/usage/tasks.html) to learn about initial YAML file generation with `photo_create_yaml` task.
+See [tasks](/photodb_documentation/usage/tasks.html) to learn about initial YAML file generation with the `photo_create_yaml` task.
 
 #### Example of `image01.jpg.yaml` file content:
 
@@ -72,7 +72,7 @@ Timestamp the image was taken. Format: ```YYYY```-```MM```-```DD```T```hh```:```
 
 ### log
 
-List of entries documenting actions that where performed on the metadata. Properties of the log entries: 
+List of entries documenting actions that were performed on the metadata. Properties of the log entries: 
 - **action** Short description of the action
 - **date** timestamp the action was performed, more properties may be added specific to the action.
 

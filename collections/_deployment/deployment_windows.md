@@ -6,7 +6,7 @@ title: Deployment on Windows
 
 While deployment on windows is possible, deployment on Ubuntu is preferred. Some convenience scripts are currently included only for Ubuntu.
 
-On Windows you may utilze `Windows Subsystem for Linux (WSL)` to run the application in Ubuntu mode inside of Ubuntu on Windows. Visit the [Ubuntu homepage](https://ubuntu.com/desktop/wsl). to learn more about WSL.
+On Windows you may utilze `Windows Subsystem for Linux (WSL)` to run the application in Ubuntu mode inside of Ubuntu on Windows. Visit the [Ubuntu homepage](https://ubuntu.com/desktop/wsl) to learn more about WSL.
 
 ## Prerequisite: Java 11
 

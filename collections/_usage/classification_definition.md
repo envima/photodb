@@ -1,13 +1,12 @@
 ---
-title: Classification definitions
+title: Classification Definitions
 ---
 
-The PhotoDB web interface, PhotoApp can be used as an annotation tool. For a detailed explanation of this functionility see [PhotoApp Viewer](/photodb_documentation/usage/photoapp_viewer.html).
+The PhotoDB web interface, PhotoApp, can be used as an annotation tool. For a detailed explanation of this functionility see [PhotoApp Viewer](/photodb_documentation/usage/photoapp_viewer.html).
 
-During annotation a list of possible classification labels, i.e., classes, can be specified. These predefined classes can then be selected effortlessly by the user during annotation. This  prevents having different notations of the same object in the metadata, which might happen when users type the labels themselves.  
-If an object is not in the predefined classification list, it is always possible for the users to type the label themselves during annotation.
+During annotation a list of possible classification labels, i.e. classes, can be specified. These predefined classes can then be selected effortlessly by the user during annotation. This  prevents having different notations of the same object in the metadata, which might happen when users type labels themselves during annotation. If an object is not in the predefined classification list, it is always still possible for the users to type the label themselves during annotation.
 
-The classification definition is supplied as a csv file. This file is given as `classification_definition_csv` in the project configuration file `config.yaml`, e.g.:
+The classification definition is supplied as a CSV file. This file is given as `classification_definition_csv` in the project configuration file `config.yaml`, e.g.:
 
 ```yaml
 classification_definition_csv: photo_classification_definitions.csv
@@ -16,8 +15,8 @@ classification_definition_csv: photo_classification_definitions.csv
 Inside the `photo_classification_definitions.csv` file, class names and descriptions are supplied, e.g.:
 
 ```CSV
-#comment
-name,description
+# comment
+name, description
 branch, singular oak branch
 leaf, singular oak leafs
 herbivory, visible inner leaf damage
@@ -37,8 +36,8 @@ During annotation these classes can be selected from a drop-down menu:
 
 The classification definition file is in **CSV format** with comma separated columns `name` and `description`.
 
-`name` will be used as classification label that can be set at the web-interface, and that is stored in the photo meta data. Short names are recommended.
+`name` will be used as classification label that can be set at the web interface and that is stored in the photo meta data. Short names are recommended.
 
-`description` specifies the exact meaning of `name`. It is shown at the web-interface classification label selection control as descriptive annotation.
+`description` specifies the exact meaning of `name`. It is shown at the web interface classification label selection control as descriptive annotation.
 
 To **disable a line** in the CSV file set the `#` character at the beginning of a line to comment out that line.

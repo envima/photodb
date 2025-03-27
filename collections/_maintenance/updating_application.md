@@ -4,7 +4,7 @@ title: Updating
 
 First, make sure a running instance of the **application server is stopped**, e.g. by pressing crtl-c in the terminal.
 
-Follow the **update procedure**. 
+Then follow the **update procedure**. 
 
 **Your** data files, meta data files, configuration **files will not be changed**.
 

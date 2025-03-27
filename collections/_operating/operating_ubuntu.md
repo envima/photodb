@@ -11,7 +11,9 @@ Execute `audio.sh` (located in the PhotoDB root directory) from the console to s
 The web application, PhotoApp, can now be opened in a browser.
 
 For local instances with default port 8080 go to:  
+```text
 http://127.0.0.1:8080/
+```
 
 If you configured an external server go to the corresponding address.
 

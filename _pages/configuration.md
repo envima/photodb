@@ -10,4 +10,4 @@ In the next chapters, you will learn how to adapt this file to setup your very o
 
 **NOTE**: PhotoDB is meant to be used as a collaborative tool that can be acessed via the internet. For this purpose you need to configure some [server](/photodb_documentation/configuration/server.html) and [HTTP(S)](/photodb_documentation/configuration/https.html) settings, that cannot be explained in detail in this manual.  
 Alternatively, PhotoDB can be set up locally, e.g., to get a first impression of the software.  
-You may skip [server](/photodb_documentation/configuration/server.html) and [HTTP(S)](/photodb_documentation/configuration/https.html) configuration if you just want so set up a local instance, but you always need to configure basic [PhotoDB](/photodb_documentation/configuration/PhotoDB.html) settings.
+You may skip [server](/photodb_documentation/configuration/server.html) and [HTTP(S)](/photodb_documentation/configuration/https.html) configuration if you just want so set up a local instance, but you always need to configure [basic PhotoDB settings](/photodb_documentation/configuration/PhotoDB.html).

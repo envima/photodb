@@ -1,5 +1,5 @@
 ---
-title: PhotoApp viewer page
+title: PhotoApp Viewer
 --- 
 On the PhotoApp viewer page, the currently selected image can be viewed and labelled.
 
