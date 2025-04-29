@@ -1,7 +1,5 @@
-# PhotoDB
+# PhotoDB / AudioDB
 
-PhotoDB is an open-source software for image data management, preprocessing, and annotation. It is highly customizable to fit a variety of use cases. It uses a sidecar yaml file approach for metadata handling, ensuring both human- and machine-readability, as well as easy access to metadata throughout the whole processing pipeline. At any point, metadata can be modified and extended by reading from and writing to the yaml files with arbitrary programming languages or scripting environments. Classification or detection models, like MegaDetector or any custom trained model, can be integrated via interaction with the metadata yaml files. PhotoDB offers the possibility to develop complex workflows covering the whole data life cycle from collection to analysis.
+PhotoDB and AudioDB are twin platforms for data management, processing, and annotation of image respective audio data.
 
-## Get started
-
-To get started with PhotoDB, please go to  the documentation's [>>>**table of contents**<<<](docs/index.md)!
+This repository contains code for PhotoDB / AudioDB documentation (served as jekyll site) and the python package photodb_yolo_object_detection, which can be used to quickly train an Ultralytics YOLO model and integrate results into PhotoDB.
