@@ -1,8 +1,10 @@
 ---
-title: Image Metadata
+title: Metadata
 ---
 
-Metadata of images are stored as sidecar files in YAML format.
+Metadata is stored as sidecar files in YAML format.
+
+## PhotoDB Example
 
 E.g., the metadata to an image file `image01.jpg` is stored in the YAML-file `image01.jpg.yaml` located in the same folder or in a separate metadata directory of prallell structure as the image folders.  
 *See [PhotoDB configuration properties root_path and root_data_path](/photodb_documentation/configuration/PhotoDB.html)*.

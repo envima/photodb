@@ -4,6 +4,6 @@ sidebar:
   nav: deployment
 ---
 
-PhotoDB is available for [Ubuntu](/photodb_documentation/deployment/deployment_ubuntu.html) or [Windows](/photodb_documentation/deployment/deployment_windows.html).
+PhotoDB / AudioDB is available for [Ubuntu](/photodb_documentation/deployment/deployment_ubuntu.html) or [Windows](/photodb_documentation/deployment/deployment_windows.html).
 
-To use PhotoDB you will need **Java 11** or newer.
+To use PhotoDB / AudioDB you will need **Java 11** or newer.

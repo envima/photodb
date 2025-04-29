@@ -2,13 +2,13 @@
 title: Running on Ubuntu
 ---
 
-Execute `audio.sh` (located in the PhotoDB root directory) from the console to start the application:
+Execute `audio.sh` (located in the PhotoDB / AudioDB root directory) from the console to start the application:
 
 ```bash
 ./audio.sh
 ```
 
-The web application, PhotoApp, can now be opened in a browser.
+The web application can now be opened in a browser.
 
 For local instances with default port 8080 go to:  
 ```text

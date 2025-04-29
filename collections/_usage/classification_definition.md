@@ -1,5 +1,5 @@
 ---
-title: Classification Definitions
+title: PhotoDB Classification Definitions
 ---
 
 The PhotoDB web interface, PhotoApp, can be used as an annotation tool. For a detailed explanation of this functionility see [PhotoApp Viewer](/photodb_documentation/usage/photoapp_viewer.html).

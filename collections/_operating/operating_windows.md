@@ -8,7 +8,7 @@ To start the application run the start script from the **command line** or just 
 win_audio.cmd
 ```
 
-The web application, PhotoApp, can now be opened in a browser.
+The web application can now be opened in a browser.
 
 For local instances with default port 8080 go to: 
 ```text 

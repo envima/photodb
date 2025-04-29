@@ -1,5 +1,5 @@
 ---
-title: Review Lists
+title: PhotoDB Review Lists
 --- 
 
 Apart from directly traversing the project photo archive according to folder structure, **review lists** allow to traverse a subset of images in sequential order. One review list contains a list of photo entries to traverse.

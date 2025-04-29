@@ -1,14 +1,17 @@
 ---
-title: Getting started with PhotoDB
+title: Getting started with PhotoDB / AudioDB
 ---
 
-To set up your own PhotoDB instance, you need to download the latest release package, configure it to fit your data / folder structure, and learn how to use the PhotoDB web application, PhotoApp. Click through the following guide for detailed step by step instructions!
+AudioDB and PhotoDB are twin platforms developed for audio respective image data management, processing , and annotation. 
+
+To set up your own PhotoDB / AudioDB instance, you need to download the latest release package, configure it to fit your data / folder structure, and learn how to use the PhotoDB / AudioDB web application, PhotoApp / AudioApp. Click through the following guide for detailed step by step instructions!
 
 [**Deployment**](deployment.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Ubuntu](/photodb_documentation/deployment/deployment_ubuntu.html)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Windows](/photodb_documentation/deployment/deployment_windows.html)  
 [**Configuration**](configuration.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Project](/photodb_documentation/configuration/PhotoDB.html)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PhotoDB](/photodb_documentation/configuration/PhotoDB.html)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[AudioDB](/photodb_documentation/configuration/AUdioDB.html)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Server](/photodb_documentation/configuration/server.html)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTTPS](/photodb_documentation/configuration/https.html)  
 [**Operating**](operating.md)  

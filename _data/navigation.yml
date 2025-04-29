@@ -21,8 +21,10 @@ configuration:
   - title: "Configuration"
     url: /_pages/configuration.html
     children:
-    - title: "Project Configuration"
+    - title: "PhotoDB Configuration"
       url: /configuration/PhotoDB.html
+    - title: "AudioDB Configuration"
+      url: /configuration/AudioDB.html
     - title: "Server"
       url: /configuration/server.html
     - title: "HTTPS certificate"

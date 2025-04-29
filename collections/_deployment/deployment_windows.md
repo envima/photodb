@@ -12,7 +12,7 @@ On Windows you may utilze `Windows Subsystem for Linux (WSL)` to run the applica
 
 [Install Java](https://adoptium.net) 11 or newer.
 
-## Download PhotoDB
+## Download Latest Release Package
 
 If you still want to deploy on Windows, without WSL, simply download the [latest distribution package](https://github.com/Nature40/audiodb/releases/latest/download/package.zip) and extract it.
 

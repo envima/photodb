@@ -1,8 +1,8 @@
 ---
-title: PhotoDB Tasks
+title: PhotoDB / AudioDB Tasks
 ---
 
-Tasks are possibly long running actions within the PhotoDB application. For example, you may generate YAML metadata files by running the `photo_create_yaml` task or refresh the web interface using the `photo_refresh` task.
+Tasks are possibly long running actions within the PhotoDB / AudioDB application. For example, when using PhotoApp you may generate YAML metadata files by running the `photo_create_yaml` task or refresh the web interface using the `photo_refresh` task.
 
 Currently tasks are executed in the audio web-interface. Even for PhotoDB only tasks, you need to open the audio web-interface to manage tasks.
 
@@ -29,7 +29,9 @@ Select a task from the drop down menu at the top left and click `submit task`. A
 
 See below for a list of available tasks and explanations of each task's function.
 
-## Tasks
+# Tasks
+
+## PhotoDB
 
 ### photo_create_file_hashs
 
@@ -64,3 +66,69 @@ This task needs to be run if some data was changed externally, e.g. photo files 
 For a quick overview of your images, the PhotoApp web-interface browser page shows small thumbnails of the photo files. For quick user interaction thumbnails are cached and generated on demand.
 
 This tasks scans for not already cached thumbnails and creates all missing thumbnails. This prevents the user to wait for viewing thumbnails at the browser page.
+
+## AudioDB
+
+### audio_compact_sample_storage_db
+
+Compact sample database. Database is closed. AudioDB needs to be restared manually afterwards to access the database again.
+
+### audio_create_file_hashs
+
+Create hashs of all audio files, if missing.
+
+### audio_create_yaml
+
+Traverse root_data_path and for all WAV files without YAML file in root_path create a new YAML file.
+
+### audio_location_timeseries
+
+Create audio recording timeseries per location.
+
+### audio_normalise_meta
+
+Normalise metadata.
+
+### audio_qoa_check
+
+Check QOA audio files.
+
+### audio_qoa_convert
+
+Convert audio files to QOA audio format.
+
+### audio_rebuild
+
+Clear sample database and traverse root_path with reading all YAML files and filling sample database.
+
+### audio_rebuild_label
+
+Clear label database and traverse all entries in sample database to fill label database and write a set of CSV files to output folder containing labeling entries and statistics.
+
+### audio_recreate_locations_from_inventory
+
+Remove locations and insert locations from inventory.
+
+### audio_refresh
+
+Traverse root_path and check for changed or added or removed YAML files to update sample database.
+
+### audio_refresh_worklists
+
+Regenerate worklists.
+
+### audio_sample_statistics
+
+Create statistics about sample time and location.
+
+### audio_sample_storage_refresh_ordered_sample
+
+Refresh ordered sample.
+
+### audio_scan_yaml_orphans
+
+Scan for yaml files with missing data files.
+
+### infinite
+
+Infinite running task. For testing purposes.

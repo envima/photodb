@@ -4,7 +4,7 @@ title: PhotoApp Query
 
 When opening the PhotoDB web interface PhotoApp, you first need to specify a set of images to display. This is done in the `Query`tab.
 
-Image sequences can either be specified by filtering according to the image directory's structure given as `original_path_keys` in the project configuration file [`config.yaml`](/photodb_documentation/configuration/PhotoDB.html) or by supplying [`review_lists`](/photodb_documentation/usage/review_lists.html).
+Image sequences can be specified by filtering by camera location and date. Implementation of image filtering according to the image directory's structure given as `original_path_keys` in the project configuration file [`config.yaml`](/photodb_documentation/configuration/PhotoDB.html) is planned. Alternatively, images sequences may be specified by supplying [`review_lists`](/photodb_documentation/usage/review_lists.html).
 
 ## Query
 
