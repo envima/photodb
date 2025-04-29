@@ -1,0 +1,94 @@
+main:
+  - title: "Table of Contents"
+    url: /_pages/instructions_introduction.html
+  - title: "GitHub"
+    url: https://github.com/Nature40/audiodb
+
+deployment:
+  - title: "Deployment"
+    url: /_pages/deployment.html
+    children:
+    - title: "Ubuntu"
+      url: /deployment/deployment_ubuntu.html
+    - title: "Windows"
+      url: /deployment/deployment_windows.html
+  - title: "Configuration"
+    url: /_pages/configuration.html
+
+configuration:
+  - title: "Deployment"
+    url: /_pages/deployment.html
+  - title: "Configuration"
+    url: /_pages/configuration.html
+    children:
+    - title: "PhotoDB Configuration"
+      url: /configuration/PhotoDB.html
+    - title: "AudioDB Configuration"
+      url: /configuration/AudioDB.html
+    - title: "Server"
+      url: /configuration/server.html
+    - title: "HTTPS certificate"
+      url: /configuration/https.html
+  - title: "Operating"
+    url: /_pages/operating.html
+
+operating:
+  - title: "Configuration"
+    url: /_pages/configuration.html
+  - title: "Operating"
+    url: /_pages/operating.html
+    children:
+    - title: "Ubuntu"
+      url: /operating/operating_ubuntu.html
+    - title: "Windows"
+      url: /operating/operating_windows.html
+  - title: "Usage"
+    url: /_pages/usage.html
+
+usage:
+  - title: "Operating"
+    url: /_pages/operating.html
+  - title: "PhotoDB & PhotoAPP Usage"
+    url: /_pages/usage.html
+    children:
+    - title: "Metadata"
+      url: /usage/metadata.html
+    - title: "PhotoDB Classification"
+      url: /usage/classification_definition.html
+    - title: "PhotoDB Review Lists"
+      url: /usage/review_lists.html
+    - title: "Tasks"
+      url: /usage/tasks.html
+    - title: "PhotoApp Query"
+      url: /usage/photoapp_query.html
+    - title: "PhotoApp Browser"
+      url: /usage/photoapp_browser.html
+    - title: "PhotoApp Viewer"
+      url: /usage/photoapp_viewer.html
+  - title: "Maintenance"
+    url: /_pages/maintenance.html
+
+maintenance:
+  - title: "PhotoDB & PhotoApp Usage"
+    url: /_pages/usage.html
+  - title: "Maintenance"
+    url: /_pages/maintenance.html
+    children:
+    - title: "User Accounts"
+      url: /maintenance/user_accounts.html
+    - title: "Updating Application"
+      url: /maintenance/updating_application.html
+  - title: "Development"
+    url: /_pages/development.html
+
+development:
+  - title: "Maintenance"
+    url: /_pages/maintenance.html
+  - title: "Development"
+  - title: "Troubleshooting"
+    url: /_pages/troubleshooting.html
+
+troubleshooting:
+  - title: "Development"
+    url: /_pages/development.html
+  - title: "Troubleshooting"
