@@ -1,4 +1,6 @@
-# AudioDB Configuration
+---
+title: AudioDB Project Configuration
+---
 
 Application settings are in YAML file `config.yaml`
 
