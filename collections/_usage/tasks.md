@@ -6,7 +6,7 @@ Tasks are possibly long running actions within the PhotoDB / AudioDB application
 
 Currently tasks are executed in the audio web-interface. Even for PhotoDB only tasks, you need to open the audio web-interface to manage tasks.
 
-#### Example:
+#### Example Switch from PhotoApp to AudioApp:
 
 Application sever is accessible by web address:
 ```text
@@ -21,11 +21,15 @@ To switch to AudioApp, you need to replace the `photo` part with `audio`:
 ```text
 http://localhost:8080/web/audio
 ```
-There, click on the top left button to open the left navigation side panel and select the entry `Task submission` to execute PhotoDB tasks:
+---
+
+In AudioApp, click on the top left button to open the left navigation side panel and select the entry `Task submission` to execute PhotoDB or AudioDB tasks:
 
 <img src="/photodb_documentation/assets/PhotoApp_tasksubmission.png" alt="PhotoDB AudioDB task submission" width="auto" height="300" align="center">
 
-Select a task from the drop down menu at the top left and click `submit task`. A pop-up window will open showing you the progress of the task. Once the pop-up window indicates that the task is done you can switch back you PhotoApp by replacing `audio` with `photo` in the web address.
+Select a task from the drop down menu at the top left and click `submit task`. A pop-up window will open showing you the progress of the task. A pop-up window will indicate when the task is done.
+
+If you are using PhotoDB / PhotoApp, you can switch back you PhotoApp by replacing `audio` with `photo` in the web address.
 
 See below for a list of available tasks and explanations of each task's function.
 

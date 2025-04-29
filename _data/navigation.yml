@@ -42,7 +42,7 @@ operating:
       url: /operating/operating_ubuntu.html
     - title: "Windows"
       url: /operating/operating_windows.html
-  - title: "PhotoDB & PhotoAPP Usage"
+  - title: "Usage"
     url: /_pages/usage.html
 
 usage:
@@ -51,11 +51,11 @@ usage:
   - title: "PhotoDB & PhotoAPP Usage"
     url: /_pages/usage.html
     children:
-    - title: "Image Metadata"
+    - title: "Metadata"
       url: /usage/metadata.html
-    - title: "Classification Definition"
+    - title: "PhotoDB Classification"
       url: /usage/classification_definition.html
-    - title: "Review Lists"
+    - title: "PhotoDB Review Lists"
       url: /usage/review_lists.html
     - title: "Tasks"
       url: /usage/tasks.html

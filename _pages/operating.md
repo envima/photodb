@@ -1,5 +1,5 @@
 ---
-title: Operating PhotoDB
+title: Operating PhotoDB / AudioDB
 sidebar:
   nav: operating
 ---

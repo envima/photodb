@@ -32,9 +32,11 @@ On the newly installed application, there are no accounts registered, so a login
 
 *Accounts can be managed by users logged in by accounts with associated **admin** role only. Or by **disabled login**, leading to **admin rights**.*
 
-The **account management page** is located at the AudioApp web interface. Even for PhotoDB only projects, you need to open the AudioDB web interface to manage accounts:
+The **account management page** is located at the AudioApp web interface.
 
-**Example**: Application sever is accessible by web address:
+Even for PhotoDB only projects, you need to open the AudioDB web interface to manage accounts:
+
+**Example:** Application sever is accessible by web address:
 ```text
 http://localhost:8080
 ```
@@ -47,6 +49,7 @@ Then to switch to AudioApp, you need to replace the `photo` part with `audio`:
 ```text
 http://localhost:8080/web/audio
 ```
+---
 
 At AudioApp, click on the top left button to open the left navigation side panel and select the entry `Project selection`. Then the left navigation side panel shows some entries. Click on the `Accounts` entry to open the **user accounts management page**.
 
