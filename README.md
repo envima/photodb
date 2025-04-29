@@ -1,4 +1,4 @@
-# PhotoDB / AudioDB
+# PhotoDB / AudioDB Documentation
 
 PhotoDB and AudioDB are twin platforms for data management, processing, and annotation of image respective audio data.
 
