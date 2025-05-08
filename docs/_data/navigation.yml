@@ -65,6 +65,8 @@ usage:
       url: /usage/photoapp_browser.html
     - title: "PhotoApp Viewer"
       url: /usage/photoapp_viewer.html
+    - title: "PhotoDB Object Detection"
+      url: /usage/yolo_detection.html
   - title: "Maintenance"
     url: /_pages/maintenance.html
 
