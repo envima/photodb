@@ -28,9 +28,9 @@ If some major structure changed, you may need to **clear the application cache**
 
 **Download** the latest release from the GitHub repository releases: 
 
-[**https://github.com/Nature40/audiodb/releases**](https://github.com/Nature40/audiodb/releases)
+[**https://github.com/envima/audiodb/releases**](https://github.com/envima/audiodb/releases)
 
-[**Direct download of latest release**](https://github.com/Nature40/audiodb/releases/latest/download/package.zip)
+[**Direct download of latest release**](https://github.com/envima/audiodb/releases/latest/download/package.zip)
 
 **Extract** the downloaded zip file package.
 
