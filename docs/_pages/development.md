@@ -9,7 +9,7 @@ sidebar:
 The backend server is developed in Java.
 
 Java source code folder:
-[src](https://github.com/envima/audiodb/tree/master/src)
+[src](https://github.com/envima/audiodb/audiodb/tree/master/src)
 
 Development is assembled by Gradle build automation tool.  
 [`build.gradle`](https://github.com/envima/audiodb/blob/master/build.gradle) file
