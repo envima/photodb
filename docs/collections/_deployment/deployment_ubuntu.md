@@ -14,7 +14,7 @@ java -version
 
 ## Download Latest Release
 
-PhotoDB / AudioDB release packages are found on [GitHub](https://github.com/Nature40/audiodb/releases). Download the latest package using [this download link](https://github.com/Nature40/audiodb/releases/latest/download/package.zip).
+PhotoDB / AudioDB release packages are found on [GitHub](https://github.com/envima/audiodb/releases). Download the latest package using [this download link](https://github.com/envima/audiodb/releases/latest/download/package.zip).
 
 After downloading the latest distribution package, change into the directory you downloaded PhotoDB into:
 
