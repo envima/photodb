@@ -2,7 +2,7 @@
 title: PhotoDB Classification Definitions
 ---
 
-The PhotoDB web interface, PhotoApp, can be used as an annotation tool. For a detailed explanation of this functionility see [PhotoApp Viewer](/photodb_documentation/usage/photoapp_viewer.html).
+The PhotoDB web interface, PhotoApp, can be used as an annotation tool. For a detailed explanation of this functionility see [PhotoApp Viewer](/photodb/usage/photoapp_viewer.html).
 
 During annotation a list of possible classification labels, i.e. classes, can be specified. These predefined classes can then be selected effortlessly by the user during annotation. This  prevents having different notations of the same object in the metadata, which might happen when users type labels themselves during annotation. If an object is not in the predefined classification list, it is always still possible for the users to type the label themselves during annotation.
 
@@ -32,7 +32,7 @@ oak6, bottom right potted plant
 
 During annotation these classes can be selected from a drop-down menu:
 
-<img src="/photodb_documentation/assets/PhotoApp_classificationdefinition.png" alt="PhotoApp classification definition drop down menu" width="auto" height="300" align="center">
+<img src="/photodb/assets/PhotoApp_classificationdefinition.png" alt="PhotoApp classification definition drop down menu" width="auto" height="300" align="center">
 
 The classification definition file is in **CSV format** with comma separated columns `name` and `description`.
 
