@@ -65,7 +65,7 @@ File relative to application folder:
 ```yaml
 classification_definition_csv: photo_classification_definitions.csv
 ```
-*See [classification definitions](/photodb_documentation/usage/classification_definition.html)*.
+*See [classification definitions](/photodb/usage/classification_definition.html)*.
 
 ---
 
@@ -77,7 +77,7 @@ Folder relative to application folder:
 ```yaml
 review_list_path: 'photo_review_lists'
 ```
-*See [review lists](/photodb_documentation/usage/review_lists.html)*.
+*See [review lists](/photodb/usage/review_lists.html)*.
 
 ---
 
@@ -85,7 +85,7 @@ review_list_path: 'photo_review_lists'
 
 Description of directory sturcture within photo_data root directory.
 
-When creating metadata files with [photo_create_yaml task](/photodb_documentation/usage/tasks.html) path elements are saved as list "original_path". The keys supplied here are mapped to the elements of original_path and written to the metadata file as key/value pairs.
+When creating metadata files with [photo_create_yaml task](/photodb/usage/tasks.html) path elements are saved as list "original_path". The keys supplied here are mapped to the elements of original_path and written to the metadata file as key/value pairs.
 
 The following keys will be ignored:  
 ' ', '*', '_', 'PhotoSens', 'original_path', 'file', 'file_size', 'log' 
