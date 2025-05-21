@@ -40,12 +40,12 @@ See below for a list of available tasks and explanations of each task's function
 ### photo_create_file_hashs
 
 For all photo files create checksums (i.e. a value that represents the number of bits in a transmission message). Skip files with already created checksums.  
-*See [image metadata property XXH64](/photodb_documentation/usage/metadata.html)*.
+*See [image metadata property XXH64](/photodb/usage/metadata.html)*.
 
 ### photo_create_yaml
 
 Traverse `root_data_path` and for all image files without a corresponding YAML file in `root_path` create a new YAML file. Existing YAML files are not overwritten.
-*See [image metadata](/photodb_documentation/usage/metadata.html)*.
+*See [image metadata](/photodb/usage/metadata.html)*.
 
 **This task must be executed when new images are added to PhotoDB!**
 
@@ -56,12 +56,12 @@ Insert **MegaDetector** detections.
 MegaDetector is an extenal application to detect **animal**, **person** or **vehicle**. For how to install and run MegaDetector, see [MegaDetector repository on GitHub](https://github.com/microsoft/CameraTraps/blob/main/megadetector.md).
 
 MegaDetector retuns a JSON results file. Detections content of that file can be inserted in PhotDB meta data YAML files with this task.  
-*See for inserted MegaDetector detections [image metadata property detections](/photodb_documentation/usage/metadata.html)*.
+*See for inserted MegaDetector detections [image metadata property detections](/photodb/usage/metadata.html)*.
 
 ### photo_refresh
 
 Traverse `root_path` and check for changed, added or removed YAML files to update photo database.  
-*See [PhotoDB configuration properties root_path and root_data_path](/photodb_documentation/configuration/PhotoDB.html)*.
+*See [PhotoDB configuration properties root_path and root_data_path](/photodb/configuration/PhotoDB.html)*.
 
 This task needs to be run if some data was changed externally, e.g. photo files have been added or YAML meta data has been modified manually.
 
