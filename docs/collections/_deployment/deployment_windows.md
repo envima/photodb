@@ -14,6 +14,6 @@ On Windows you may utilze `Windows Subsystem for Linux (WSL)` to run the applica
 
 ## Download Latest Release Package
 
-If you still want to deploy on Windows, without WSL, simply download the [latest distribution package](https://github.com/Nature40/audiodb/releases/latest/download/package.zip) and extract it.
+If you still want to deploy on Windows, without WSL, simply download the [latest distribution package](https://github.com/envima/audiodb/releases/latest/download/package.zip) and extract it.
 
 The distribution package includes some example files, that we will have a look at later on.
