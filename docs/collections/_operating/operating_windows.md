@@ -21,4 +21,4 @@ If you configured an external server go to the corresponding address.
 
 Stop server by key **ctrl-c** or by closing the terminal.
 
-**NOTE**: For images to appear in PhotoApp, corresponding metadata files need to exist. Go to [Tasks](/photodb_documentation/usage/tasks.html) to learn how to create metadata files via the **photo_create_yaml** task!
+**NOTE**: For images to appear in PhotoApp, corresponding metadata files need to exist. Go to [Tasks](/photodb/usage/tasks.html) to learn how to create metadata files via the **photo_create_yaml** task!
