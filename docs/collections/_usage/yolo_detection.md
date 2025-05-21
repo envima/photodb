@@ -32,7 +32,7 @@ and
 
 * **annotated training, validation, and optionally testing data**
   
-  * use [photo_review_lists](review_lists.md) to mark subsets of your image data for model training / validation / testing
+  * use [photo_review_lists](review_lists.html) to mark subsets of your image data for model training / validation / testing
   
   * draw training / validation / testing bounding boxes in PhotoApp
 
@@ -46,7 +46,7 @@ First, convert your training / validation / testing data into YOLO format, i.e. 
 photodb_yolo_reformat
 ```
 
-Second, use your custom data to train a YOLO model for object detection. This tool provides minimal training, i.e. uses default training parameters and does not do hyperparameter tuning. Adjust the [script](../../../photodb_yolo_object_detection/photodb_yolo_object_detection/photodb_yolo_train.py) to include hyperparameter tuning for optimal model results, if needed.
+Second, use your custom data to train a YOLO model for object detection. This tool provides minimal training, i.e. uses default training parameters and does not do hyperparameter tuning. Adjust the [script](https://github.com/envima/photodb/tree/main/photodb_yolo_object_detection/photodb_yolo_object_detection/photodb_yolo_train.py) to include hyperparameter tuning for optimal model results, if needed.
 
 ```shell
 photodb_yolo_train
