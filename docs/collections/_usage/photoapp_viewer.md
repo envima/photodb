@@ -7,7 +7,7 @@ On the page center the selected image is shown in detail, fitted to the screen s
 
 ## Controls above the image
 
-<img src="/photodb_documentation/assets/PhotoApp_viewer_general.png" alt="PhotoApp Viewer Overview" width="auto" height="300" align="center">
+<img src="/photodb/assets/PhotoApp_viewer_general.png" alt="PhotoApp Viewer Overview" width="auto" height="300" align="center">
 
 **a)** Navigate to the previous image of the image sequence  
 **b)** Image location and timestamp  
@@ -28,7 +28,7 @@ On the page center the selected image is shown in detail, fitted to the screen s
 
 ## Controls below the image
 
-<img src="/photodb_documentation/assets/PhotoApp_viewer_annotation.png" alt="PhotoApp QViewer Annotation" width="auto" height="300" align="center">
+<img src="/photodb/assets/PhotoApp_viewer_annotation.png" alt="PhotoApp QViewer Annotation" width="auto" height="300" align="center">
 
 **a)** Select a label from the preset list  
 **b)** Type in a custom label name if not in preset list  
