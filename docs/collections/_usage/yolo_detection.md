@@ -18,7 +18,7 @@ and
 
 * **photodb_yolo_object_detection installation**
   
-  * [download the latest distribution](/photodb_yolo_object_detection/dist)
+  * [download the latest distribution](/photodb/tree/main/photodb_yolo_object_detection/dist)
     
     ```shell
     pip install photodb_yolo_object_detection-1.0.0-py3-none-any.whl
