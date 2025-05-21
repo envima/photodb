@@ -2,7 +2,7 @@ main:
   - title: "Table of Contents"
     url: /_pages/instructions_introduction.html
   - title: "GitHub"
-    url: https://github.com/Nature40/audiodb
+    url: https://github.com/envima/audiodb
 
 deployment:
   - title: "Deployment"
