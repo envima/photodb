@@ -1,8 +1,8 @@
 ---
-title: Integrate YOLO Object Detection into PhotoDB
+title: photodb_yolo_object_detection
 ---
 
-Due to using easily accessible YAML metadata sidecar files PhotoDB enables interaction with image metadata through any programming language at any point of a proccessing workflow. When annotating large image sets you might want to use object detection models. Here, you can learn how to use the python package `photodb_yolo_object_detection` to
+Here, you learn how to use the python package `photodb_yolo_object_detection` to
 
 * transform annotations generated in PhotoApp to YOLO format
 

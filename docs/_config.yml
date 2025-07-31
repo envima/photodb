@@ -59,6 +59,9 @@ collections:
   usage:
     output: true
     permalink: /:collection/:title.html
+  objectdetection:
+    output: true
+    permalink: /:collection/:title.html
   maintenance:
     output: true
     permalink: /:collection/:title.html
@@ -107,6 +110,15 @@ defaults:
       category: usage
       sidebar:
         nav: "usage"
+  # objectdetection
+  - scope:
+      path: ""
+      type: objectdetection
+    values:
+      layout: single
+      category: objectdetection
+      sidebar:
+        nav: "objectdetection"
   # maintenance
   - scope:
       path: ""

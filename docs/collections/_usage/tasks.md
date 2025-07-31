@@ -25,7 +25,7 @@ http://localhost:8080/web/audio
 
 In AudioApp, click on the top left button to open the left navigation side panel and select the entry `Task submission` to execute PhotoDB or AudioDB tasks:
 
-<img src="/photodb_documentation/assets/PhotoApp_tasksubmission.png" alt="PhotoDB AudioDB task submission" width="auto" height="300" align="center">
+<img src="/photodb/assets/PhotoApp_tasksubmission.png" alt="PhotoDB AudioDB task submission" width="auto" height="300" align="center">
 
 Select a task from the drop down menu at the top left and click `submit task`. A pop-up window will open showing you the progress of the task. A pop-up window will indicate when the task is done.
 
@@ -53,7 +53,7 @@ Traverse `root_data_path` and for all image files without a corresponding YAML f
 
 Insert **MegaDetector** detections.
 
-MegaDetector is an extenal application to detect **animal**, **person** or **vehicle**. For how to install and run MegaDetector, see [MegaDetector repository on GitHub](https://github.com/microsoft/CameraTraps/blob/main/megadetector.md).
+MegaDetector is an extenal application to detect **animals**, **persons** or **vehicles**. For how to install and run MegaDetector, see [MegaDetector repository on GitHub](https://github.com/microsoft/CameraTraps/blob/main/megadetector.md).
 
 MegaDetector retuns a JSON results file. Detections content of that file can be inserted in PhotDB meta data YAML files with this task.  
 *See for inserted MegaDetector detections [image metadata property detections](/photodb/usage/metadata.html)*.
