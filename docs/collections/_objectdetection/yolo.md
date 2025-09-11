@@ -32,7 +32,7 @@ and
 
 * **annotated training, validation, and optionally testing data**
   
-  * use [photo_review_lists](review_lists.html) to mark subsets of your image data for model training / validation / testing
+  * use [photo_review_lists](/photodb/usage/review_lists.html) to mark subsets of your image data for model training / validation / testing
   
   * draw training / validation / testing bounding boxes in PhotoApp
 

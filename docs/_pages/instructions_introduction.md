@@ -11,7 +11,7 @@ To set up your own PhotoDB / AudioDB instance, you need to download the latest r
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Windows](/photodb/deployment/deployment_windows.html)  
 [**Configuration**](configuration.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PhotoDB](/photodb/configuration/PhotoDB.html)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[AudioDB](/photodb/configuration/AUdioDB.html)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[AudioDB](/photodb/configuration/AudioDB.html)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Server](/photodb/configuration/server.html)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HTTPS](/photodb/configuration/https.html)  
 [**Operating**](operating.md)  

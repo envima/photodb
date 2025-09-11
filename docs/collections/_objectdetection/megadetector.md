@@ -6,7 +6,7 @@ MegaDetector is an extenal application to detect **animals**, **persons** or **v
 
 MegaDetector outputs a single `json` file containing detection results of all the images it analysed. Using the PhotoDB `photo_insert_megadetector_detections` task you can integrate these results with a few clicks:
 
-1. Switch to audio web interface and open the task submission panel as described under [tasks](photodb/usage/tasks.html).
+1. Switch to audio web interface and open the task submission panel as described under [tasks](/photodb/usage/tasks.html).
 
 2. Provide your MegaDetector output file and click `SUBMIT TASK`.
 

@@ -13,7 +13,7 @@ Image sequences can be specified by filtering by camera location and date. Imple
 Images are filtered by `location` and `date`. One day in time is selected. Days that contain images at the specified location are marked with black text, days that contain images at some locations, but not at the currently selected location are marked with grey text.
 
 Planned feature:  
-Keys supplied in [`config.yaml`](/photodb/configuration/photodb.html) as **original_path_keys** may be used to filter images, creating customized image subsets.
+Keys supplied in [`config.yaml`](/photodb/configuration/PhotoDB.html) as **original_path_keys** may be used to filter images, creating customized image subsets.
 
 ### Example:
 
@@ -63,4 +63,4 @@ A click on the **add new review list set button** opens a dialog box to specify 
 
 At the bottom of the page the count of images of the current image sequence is shown.
 
-To view the selected image sequence move on to the [**browser**-page](/photodb_documentation/usage/photoapp_browser.html) by click on the browser-entry on the left side panel.
+To view the selected image sequence move on to the [**browser**-page](/photodb/usage/photoapp_browser.html) by click on the browser-entry on the left side panel.

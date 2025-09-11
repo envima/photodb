@@ -100,12 +100,12 @@ do
   exit 1
   fi
 
-  echo "Schritt $i: start processing scripts..."
+  echo "step $i: start processing scripts..."
 
   Rscript initial_yaml_generation.R
   Rscript invoke_megadetector_and_mark_people.R
 
-  echo "Schritt $i: Sleep 15 min. "
+  echo "step $i: Sleep 15 min. "
   sleep 450  # 450 seconds = 15 minutes
 done
 

@@ -14,4 +14,4 @@ For PhotoDB, we also want to study the [definition of annotation classes](/photo
 
 Next, look at some [tasks](/photodb/usage/tasks.html), PhotoDB / AudioDB can complete for you.
 
-Last but not least, PhotoDB users can look at some options for [automatic object detection](/photodb/usage/object_detection.html) integration.
+Last but not least, PhotoDB users can learn how to [query](/photodb/usage/photoapp_query.html) and [browse](/photodb/usage/photoapp_browser.html) image subsets and [view and annotate](/photodb/usage/photoapp_viewer.html) single images on the graphical user interface **PhotoApp**.

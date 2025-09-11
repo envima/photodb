@@ -25,4 +25,4 @@ Move the mouse wheel to refresh the view. Then the images will show.
 ### Image browser page slowly loads all thumbnail images
 
 *The thumbnail images may be not in the thumbnail image cache.*  
-New images are processed and stored in the cache by task [photo_update_thumbs](/photodb/usage/tasks/.html).
+New images are processed and stored in the cache by task [photo_update_thumbs](/photodb/usage/tasks.html).
