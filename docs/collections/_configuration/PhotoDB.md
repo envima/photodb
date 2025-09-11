@@ -2,7 +2,7 @@
 title: PhotoDB Project Configuration
 ---
 
-In PhotoDB you will set up so-called `projects`. A `project` my coincide with a study. Within a `project` you need to specify the directory your image data is stored in and the directory the corresponding metadata shall be stored in. You can also use PhotoDB as an annotation tool, i.e., you may draw and label bounding boxes with the PhotoDB web application, PhotoApp. To this end, you may specify class names and image subsets that shall be annotated. Lastly, PhotoDB allows you to set your own folder structure to store your image data. You simply need to pass whatever folder structure you choose to PhotoDB.
+In PhotoDB you will set up so-called `projects`. A `project` might coincide with a study. Within a `project` you need to specify the directory your image data is stored in and the directory the corresponding metadata shall be stored in. You can also use PhotoDB as an annotation tool, i.e., you may draw and label bounding boxes with the PhotoDB web application, PhotoApp. To this end, you may specify class names and image subsets that shall be annotated. Lastly, PhotoDB allows you to set your own folder structure to store your image data. You simply need to pass whatever folder structure you choose to PhotoDB.
 
 All of this is specified in the `config.yaml` file using the following keys: *project*, *root_path*, *root_data_path*, *classification_definition_csv*, *review_list_path*, and *original_project_keys*.
 
@@ -98,26 +98,26 @@ Use '_' to skip a key (see example 3).
 directory:
 ```bash
 photo_meta
-├─── loc1
+├─── germany
 │    |─── forest
 |    |    └─── image.jpg 
 |    └─── meadow
-└─── loc2
+└─── france
      |─── forest
      └─── meadow
 ```
 `config.yaml`:
 ```yaml
 ...
-  original_path_keys: ['location', 'category']
+  original_path_keys: ['country', 'habitat']
 ```
 `image.jpg.yaml`:
 ```yaml
 ...
-original_path: [loc1, forest]
+original_path: [germany, forest]
 ...
-location: loc1
-category: forest
+country: germany
+habitat: forest
 ...
 ```
 
