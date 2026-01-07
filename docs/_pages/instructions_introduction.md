@@ -25,7 +25,7 @@ To set up your own PhotoDB / AudioDB instance, you need to download the latest r
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PhotoApp Query](/photodb/usage/photoapp_query.html)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PhotoApp Browser](/photodb/usage/photoapp_browser.html)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PhotoApp Viewer](/photodb/usage/photoapp_viewer.html)  
-[**PhotoDB Object Detection**](objectdetection.md)  
+[**Exemplary Object Detection Workflow**](objectdetection.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[YOLO](/photodb/objectdetection/yolo.html)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[MegaDetector](/photodb/objectdetection/megadetector.html)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Automation](/photodb/objectdetection/automation.html)  

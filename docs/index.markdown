@@ -18,7 +18,7 @@ AudioDB and PhotoDB are twin platforms developed for audio respective image data
 
 * open-source
 * highly customizable
-* possible AI integration
+* open to external classification / detection models
 
 ## Publications
 

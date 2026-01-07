@@ -40,19 +40,19 @@ and
 
 --- Use ``-h`` or ``--help`` to show command line tool usage. ---
 
-First, convert your training / validation / testing data into YOLO format, i.e. generate individual YOLO format label files stored in ```labels/``` parallel to ```images/```, and some YOLO configuration files stored in ```[project name]/``` within specified output directory.
+First, convert your training / validation / testing data into YOLO format, i.e., generate individual YOLO format label files stored in ```labels/``` parallel to ```images/```, and some YOLO configuration files stored in ```[project name]/``` within specified output directory.
 
 ```shell
 photodb_yolo_reformat
 ```
 
-Second, use your custom data to train a YOLO model for object detection. This tool provides minimal training, i.e. uses default training parameters and does not do hyperparameter tuning. Adjust the [script](https://github.com/envima/photodb/tree/main/photodb_yolo_object_detection/photodb_yolo_object_detection/photodb_yolo_train.py) to include hyperparameter tuning for optimal model results, if needed.
+Second, use your custom data to train a YOLO model for object detection. This tool provides minimal training, i.e., uses default training parameters and does not do hyperparameter tuning. Adjust the [script](https://github.com/envima/photodb/tree/main/photodb_yolo_object_detection/photodb_yolo_object_detection/photodb_yolo_train.py) to include hyperparameter tuning for optimal model results, if needed.
 
 ```shell
 photodb_yolo_train
 ```
 
-Third, apply your custom trained model to all images.
+Third, apply your custom trained model to all images, saving detections to the PhotoDB metadata files.
 
 ```shell
 photodb_yolo_detect

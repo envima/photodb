@@ -2,7 +2,7 @@
 title: Automatically Process Incoming Images
 ---
 
-If you have a continous data influx you may want to analyse incoming images regularly, e.g., running a  script in the background that periodically invokes your processing scripts.
+If you have a continous data influx you may want to analyse incoming images regularly, e.g., running a script in the background that periodically invokes your processing scripts. Here, we show you how to use external scripts that access the image data and metadata maintained by PhotoBD, invoke an external model using this data, and finally write the results back into the PhotoDB metadata.
 
 ### Example Processing Scripts
 
@@ -30,7 +30,7 @@ for(image_file in image_files) {
   } else {
     filename <- basename(image_file)
     timetext <- substring(filename, 2, 13) # example: filename contains timestamp
-    timestamp <- format(as.POSIXlt(ttext, format='%y%m%d%H%M%S'), format='%Y-%m-%dT%H:%M:%S')
+    timestamp <- format(as.POSIXlt(timetext, format='%y%m%d%H%M%S'), format='%Y-%m-%dT%H:%M:%S')
     meta <- list(PhotoSens='v1.0')
     meta$file <- filename
     meta$date = timestamp        
@@ -74,6 +74,7 @@ for(meta_file in meta_files) {
   reticulate::py_run_string(command)
         
   megadetector_result_file <- rjson::fromJSON(file = megadetector_result_path)
+  contains_person <- any(sapply(megadetector_result_file$images[[1]]$detections, function(det) det[['category']] == '2' && det[['conf']] >= 0.7))
   
   meta_data <- yaml::yaml.load_file(meta_file_path)
   meta_data$log[[2]] <- list(
@@ -110,3 +111,21 @@ do
 done
 
 ```
+
+## How it works
+
+The backrgpound scripts runs continously and iterates over 3 streps:
+
+1. **execute initial_yaml_generation.R**: lists image files in root data path and generates a YAML metadata file for each image
+
+2. **execute invoke_megadetector_and_mark_people.R**: invokes MegaDetector on each image file (creating a json results file), reads the resulting json file, defines booean denoting presence/absence of human detections, and writes this result into PhotoDB YAML metadata file
+
+3. **wait 15 minutes** before starting with next iteration
+
+## Example modificatios of this workflow
+
+* write detection bounding boxes into YAML files
+
+* use a different model
+
+* add processing more processing steps after detecting humans, e.g. blurring humans for privacy reasons
