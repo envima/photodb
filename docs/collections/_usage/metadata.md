@@ -15,13 +15,16 @@ See [tasks](/photodb/usage/tasks.html) to learn about initial YAML file generati
 
 ```yaml
 PhotoSens: v1.0
+original_path: [mammals,forest,Bohemia,20240130]
 file: image01.jpg
 file_size: 365532
 XXH64: 3da0cef0a449c42a
 width: 800
 height: 600
-location: loc_A
+location: Bohemia
 date: 2024-01-30T23:30:59
+taxon: mammals
+hbitat: forest
 log:
 - action: create yaml
   date: 2024-01-30T23:40:02
@@ -71,6 +74,12 @@ Location identifier of the image.
 ### date
 
 Timestamp the image was taken. Format: ```YYYY```-```MM```-```DD```T```hh```:```mm```:```ss```
+
+### original_path
+
+Path elements of the hierarchical folder structure the image file is located in, relative to root data path.
+
+If users specify original_path_keys in the comfig.yaml the elements of original_path are mapped to these keys. See [PhotoDB configuration](/photodb/configuration/PhotoDB.html) (original_path_keys) for details.
 
 ### log
 
