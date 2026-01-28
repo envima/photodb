@@ -8,7 +8,7 @@ This is an example PhotoDB setup using the flatbug dataset.
 
 ## Setup the Flatbug PhotoDB Instance
 
-1. Download and unpack the [``database/``](database) folder. This is your PhotoDB instance.  
+1. Download and unpack the [``database/``](database.zip) folder. This is your PhotoDB instance.  
 
 This folder includes the PhotoDB source code and utility files / folders as well as:
 
