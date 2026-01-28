@@ -7,3 +7,7 @@ This repository contains code for PhotoDB / AudioDB documentation (served as jek
 ## [>>Dokumentation homepage<<](https://envima.github.io/photodb/)
 
 ## [>>Source code repository<<](https://github.com/envima/audiodb)
+
+## Example PhotoDB Instance
+
+You can find an example PhotoDB instance using the public dataset flatbug [here](photodb_example_flatbug)
