@@ -2,7 +2,7 @@ main:
   - title: "Table of Contents"
     url: /_pages/instructions_introduction.html
   - title: "GitHub"
-    url: https://github.com/envima/audiodb
+    url: https://github.com/envima/photodb/tree/main
 
 deployment:
   - title: "Deployment"
@@ -68,9 +68,17 @@ usage:
   - title: "PhotoDB Oject Detection"
     url: /_pages/objectdetection.html
 
-objectdetection:
+flatbug:
   - title: "PhotoDB & PhotoAPP Usage"
     url: /_pages/usage.html
+  - title: "Reproducible Example PhotoDB Instance"
+    url: /_pages/flatbug.html
+  - title: "PhotoDB Oject Detection"
+    url: "/_pages/objectdetection.html"
+
+objectdetection:
+  - title: "Reproducible Example PhotoDB Instance"
+    url: /_pages/flatbug.html
   - title: "PhotoDB Oject Detection"
     url: "/_pages/objectdetection.html"
     children:

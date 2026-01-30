@@ -20,11 +20,9 @@ AudioDB and PhotoDB are twin platforms developed for audio respective image data
 * highly customizable
 * open to external classification / detection models
 
+## [>> Reproducible Example PhotoDB Instance <<](https://github.com/envima/photodb/tree/main/photodb_reproducible_example_flatbug)
+
 ## Publications
 
 * Wöllauer S, Just N, Bald L, Heidrich L, Zeuss D: PhotoDB: a customizable platform for image data management, processing, and annotation. *Manuscript in preperation*
 * Wöllauer S, Zeuss D: AudioDB. *Manuscript in preperation*
-
-## Example PhotoDB Instance
-
-[Here](https://github.com/envima/photodb/tree/main/photodb_example_flatbug) you can find an example PhotoDB instance using the public dataset flatbug.

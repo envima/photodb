@@ -2,12 +2,12 @@
 
 PhotoDB and AudioDB are twin platforms for data management, processing, and annotation of image respective audio data.
 
-This repository contains code for PhotoDB / AudioDB documentation (served as jekyll site) and the python package photodb_yolo_object_detection, which can be used to quickly train an Ultralytics YOLO model and integrate results into PhotoDB.
+## [>> Dokumentation homepage <<](https://envima.github.io/photodb/)
 
-## [>>Dokumentation homepage<<](https://envima.github.io/photodb/)
+## [>> Source code repository <<](https://github.com/envima/audiodb)
 
-## [>>Source code repository<<](https://github.com/envima/audiodb)
+This repository also contains a reproducible example PhotoDB instance using a public dataset and the python package photodb_yolo_object_detection, which can be used to quickly train an Ultralytics YOLO model and integrate results into PhotoDB.
 
-## Example PhotoDB Instance
+### [>> Reproducible Example <<](photodb_reproducible_example_flatbug)
 
-You can find an example PhotoDB instance using the public dataset flatbug [here](photodb_example_flatbug)
+### [>> Object Detection Python Package <<](photodb_yolo_object_detection)
