@@ -43,7 +43,10 @@ def photodb_bbox_to_yolo(metadata:dict, cls_def:pd.DataFrame):
     
         class_list = cls_def['name']
         
-        for detection in metadata["detections"]:
+        for detection in metadata['detections']:
+
+            if 'bbox' not in detection:
+                continue
 
             class_name = detection['classifications'][0]['classification']
             
@@ -76,8 +79,11 @@ def replace_last_instance(path, old, new):
     returns:
         updated filepath {str}
     '''
-    parts = path.rsplit(old, 1)  # Split from the right at the last occurrence
-    return new.join(parts)  # Join with the new substring
+    if not 'images' in path:
+        raise ValueError('Image path does not contan directory "images".')
+    else:
+        parts = path.rsplit(old, 1)
+        return new.join(parts)
 
 #%% main functions
 
@@ -263,18 +269,11 @@ def main():
         print(f"project {args.photo_project} not in {args.photo_config}")
         sys.exit(1)    
 
-    # check if root_data_path specified in photodb config contains "images"
-    if "images" not in project_config['root_data_path']:
-        print("ERROR: image path specified in PhotoDB configuration as root_data_path does not contain directory 'images'.")
-        sys.exit(1)
-
     # PhotoDB root directory
     photo_root_path = os.path.dirname(args.photo_config)
     
-    # output directories, absolute paths
+    # output directory, absolute paths
     yolo_config_directory = os.path.join(args.yolo_config_dir, args.photo_project)
-    yolo_labels_dir = replace_last_instance(project_config['root_data_path'], "images", "labels")
-    yolo_labels_directory = os.path.join(photo_root_path, yolo_labels_dir)
 
     # check if YOLO output directory already exists
     exists = []
@@ -284,9 +283,8 @@ def main():
         print("Use --outdir_exist_ok to write output into existing directory.")
         sys.exit(1)
     
-    # else create output directories
+    # else create output directory
     os.makedirs(yolo_config_directory, exist_ok = True)
-    os.makedirs(yolo_labels_directory, exist_ok = True)
     
     # classification definition
     if args.classes is None:
@@ -318,7 +316,10 @@ def main():
         # loop over individual image paths
         for image_path in review_list['path']:
             # write yolo label file if possible
-            label_path = os.path.join(yolo_labels_directory, os.path.splitext(image_path)[0] + ".txt")
+            image_dir = os.path.join(photo_root_path, project_config['root_data_path'])
+            label_path = os.path.join(image_dir, os.path.splitext(image_path)[0] + ".txt")
+            label_path = replace_last_instance(label_path, 'images', 'labels')
+            
             yaml_path = os.path.join(photo_root_path, project_config['root_path'], image_path +'.yaml')
             write_yolo_label_return_value = write_yolo_label(yaml_path, cls_def, label_path, verbose = args.verbose)
 
