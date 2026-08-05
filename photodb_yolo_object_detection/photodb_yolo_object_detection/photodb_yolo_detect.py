@@ -196,6 +196,8 @@ def main():
     with open(args.photo_config, 'r') as f:
         cnfg = yaml.safe_load(f)
     project_config = next((item for item in cnfg['photo']['projects'] if item['project'] == args.photo_project), None)
+    if project_config is None:
+        raise ValueError(f"no project called {args.photo_project} in given project config.yaml ({args.project_config})")
 
     # PhotoDB root directory
     photo_root_path = os.path.dirname(args.photo_config)
