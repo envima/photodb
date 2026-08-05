@@ -1,0 +1,4 @@
+[console_scripts]
+photodb_yolo_detect = photodb_yolo_object_detection.photodb_yolo_detect:main
+photodb_yolo_reformat = photodb_yolo_object_detection.photodb_yolo_reformat:main
+photodb_yolo_train = photodb_yolo_object_detection.photodb_yolo_train:main

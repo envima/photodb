@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: photodb_yolo_object_detection
+Version: 1.0.0
+Summary: PhotoDB Object Detection
+Home-page: https://github.com/envima/photodb/tree/main/photodb_yolo_object_detection
+Author: Noah Just
+Author-email: noah.just@geo.uni-marburg.de
+License: MIT
+Keywords: PhotoDB YOLO detection automatic
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: setuptools
+Requires-Dist: PyYAML
+Requires-Dist: pandas
+Requires-Dist: torch>=2.3.1
+Requires-Dist: ultralytics>=8.3.28
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+Module to integrate custom YOLO model training. Requires Python>=3.2
