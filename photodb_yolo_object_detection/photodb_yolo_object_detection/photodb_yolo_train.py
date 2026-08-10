@@ -23,7 +23,8 @@ def train_yolo(yolo_model, yolo_config, yolo_directory, training_run, training_e
     model.train(data = yolo_config,
                 project = yolo_directory,
                 name = training_run,
-                epochs = training_epochs)
+                epochs = training_epochs,
+                patience = 50)
 
 
 #%% command line driver

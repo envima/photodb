@@ -10,12 +10,13 @@
 
 import os
 import sys
-import torch
+#-import torch
 import yaml
 import argparse
 from pathlib import Path
 from datetime import datetime
 from ultralytics import YOLO
+from PIL import Image
 
 #%% support functions
 
@@ -85,7 +86,7 @@ def define_log_entry(training_run, action):
 
 #%% main functions
 
-def list_images(photo_meta_root, action, training_run):
+def list_images(photo_meta_root, action, training_run, review_list=None):
     '''
     list all images in which objects have not been automatically detected
     
@@ -93,12 +94,19 @@ def list_images(photo_meta_root, action, training_run):
         photo_meta_root {os.path.normpath} : path to PhotoDB metadata root directory
         action {str} : action entry in metadata log
         training_run {str} : project entry in metadata log
+        review_list {str} : path to image list file
     returns:
         filtered list of image file paths
     '''    
     # list all metadata files
-    photo_meta_root = Path(photo_meta_root)
-    meta_files = [file.relative_to(photo_meta_root) for file in photo_meta_root.rglob('*') if file.is_file()]
+    if review_list is not None:
+        print('rl not none')
+        import pandas as pd
+        review_list = pd.read_csv(review_list)
+        meta_files = review_list['path'] + '.yaml'
+    else:
+        photo_meta_root = Path(photo_meta_root)
+        meta_files = [file.relative_to(photo_meta_root) for file in photo_meta_root.rglob('*') if file.is_file()]
     
     contains_action = []
     # filter out files that have been used for automatic object detection with specified model before
@@ -109,7 +117,7 @@ def list_images(photo_meta_root, action, training_run):
             meta = yaml.safe_load(f)
 
         # does the file contain the specified action?
-        contains_action.append(any(entry['action'] == action and entry['training_run'] == training_run for entry in meta['log']))
+        contains_action.append(any(entry.get('action') == action and entry.get('training_run') == training_run for entry in meta['log']))
     # subset files that do not contain action
     filtered_meta_files = [file for file, action in zip(meta_files, contains_action) if not action]
 
@@ -133,8 +141,12 @@ def detect_objects(images, model):
     # load the YOLOv8 model
     model = YOLO(model)
 
-    # run the model on the image
-    results = model.predict(images, save = False) # returns a list of results objects
+    results = []
+    for img in images:
+        try:
+            results.extend(model.predict(img, save=False))
+        except OSError as e:
+            print(f"Skipping {img}: {e}")
     return(results)
 
 def write_detections_to_meta(detections, photo_meta_root, photo_data_root, training_run, action):
@@ -186,6 +198,11 @@ def main():
     parser.add_argument("training_run",
                         type = str,
                         help = "absolute path to training run directory")
+    parser.add_argument("--review_list",
+                        type = str,
+                        default = None,
+                        help = "Optional; filename of review list of images to process. Default: All images are processed."
+                        )
     args = parser.parse_args()
 
     # standardize path variable
@@ -207,10 +224,16 @@ def main():
     # PhotoDB image root directory
     photo_data_root = os.path.join(photo_root_path, project_config['root_data_path'])
     photo_data_root = os.path.normpath(photo_data_root)
+    # PhotoDB review list directory
+    if args.review_list is not None:
+        photo_review_list = os.path.join(photo_root_path, project_config['review_list_path'], args.review_list)
+        photo_review_list = os.path.normpath(photo_review_list)
+    else:
+        photo_review_list = None
 
-    action = "automatic object detection"
     training_run = os.path.basename(args.training_run)
-
+    action = "automatic object detection"
+    
     # input images
     images = list_images(photo_meta_root, action, training_run)
     images = [os.path.join(photo_data_root, image) for image in images]
