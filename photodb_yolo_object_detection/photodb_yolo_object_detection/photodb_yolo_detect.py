@@ -126,29 +126,6 @@ def list_images(photo_meta_root, action, training_run, review_list=None):
     filtered_image_files = [os.path.normpath(file) for file in filtered_image_files]
     return(filtered_image_files)
 
-def detect_objects(images, model):
-    '''
-    apply yolo object detection model
-
-    arguments:
-        images {list} : list of image filepaths
-        model {str} : path to yolo model
-        confidence {int} : minimum confidence threshold for detections
-        image_size {int} : image size for inference
-    returns:
-        list of yolo results objects
-    '''
-    # load the YOLOv8 model
-    model = YOLO(model)
-
-    results = []
-    for img in images:
-        try:
-            results.extend(model.predict(img, save=False))
-        except OSError as e:
-            print(f"Skipping {img}: {e}")
-    return(results)
-
 def write_detections_to_meta(detections, photo_meta_root, photo_data_root, training_run, action):
     '''
     convert detection to PhotoDB format and save in yaml
@@ -182,6 +159,34 @@ def write_detections_to_meta(detections, photo_meta_root, photo_data_root, train
     # save the modified metadata back to the YAML file
     with open(yaml_path, 'w') as file:
         yaml.dump(meta, file, default_flow_style=False, sort_keys=False)
+
+def detect_objects_and_write(images, model, photo_meta_root, photo_data_root, training_run, action):
+    '''
+    apply yolo object detection model
+
+    arguments:
+        images {list} : list of image filepaths
+        model {str} : path to yolo model
+        confidence {int} : minimum confidence threshold for detections
+        image_size {int} : image size for inference
+    returns:
+        list of yolo results objects
+    '''
+    # load the YOLOv8 model
+    model = YOLO(model)
+
+    # detect image by image to keep memory requirements low
+    for img in images:
+        try:
+            results = model.predict(img, save=False)
+        except OSError as e:
+            print(f"Skipping {img}: {e}")
+            continue
+        for detections in results:
+            write_detections_to_meta(detections, photo_meta_root, photo_data_root, training_run, action)
+        del results
+
+
 
 
 #%% command line driver
@@ -243,11 +248,7 @@ def main():
 
     # object detection
     model = os.path.join(args.training_run, "weights/best.pt")
-    detections_list = detect_objects(images, model)
-
-    # save results in yaml files
-    for detections in detections_list:
-        write_detections_to_meta(detections, photo_meta_root, photo_data_root, training_run, action)
+    detect_objects_and_write(images, model, photo_meta_root, photo_data_root, training_run, action)
     print("Done! Go to PhotoApp to see your detection results!")
 
 if __name__ == "__main__":
